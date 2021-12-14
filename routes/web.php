@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\client\AuthClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','welcome')->name('home');
+
+//Se connecter 
+
+Route::view('login', 'client.pages.login');
+
+Route::post('login',[AuthClientController::class,'login']);
+
+
+Route::view('register', 'client.pages.register');
+
+Route::post('register', [AuthClientController::class,'register']);
