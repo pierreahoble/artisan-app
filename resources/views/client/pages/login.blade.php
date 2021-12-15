@@ -48,6 +48,21 @@
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="column col-lg-12 col-md-6 col-sm-12">
+
+                        
+
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li class="text-center">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+
+
+
                         <!-- Login Form -->
                         <div class="login-form">
                             <h2>Login</h2>
@@ -61,7 +76,7 @@
 
                                 <div class="form-group">
                                     <label>Entrer Votre Mot de Passe</label>
-                                    <input type="password" name="email" placeholder="Mot de Passe" required>
+                                    <input type="password" name="password" placeholder="Mot de Passe" required>
                                 </div>
 
                                 <div class="form-group">

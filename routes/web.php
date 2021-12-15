@@ -18,7 +18,7 @@ Route::view('/','welcome')->name('home');
 
 //Se connecter 
 
-Route::view('login', 'client.pages.login');
+Route::view('login', 'client.pages.login')->name('login');
 
 Route::post('login',[AuthClientController::class,'login']);
 
