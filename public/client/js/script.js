@@ -515,7 +515,7 @@
 				},
 				email: {
 					required: true,
-					email: true
+					email: true,
 				},
 				phone: {
 					required: true,

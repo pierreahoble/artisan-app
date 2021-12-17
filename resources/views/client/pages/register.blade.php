@@ -102,7 +102,7 @@
                             </form>
                             <div class="form-group pass">
                                 {{-- <a href="{{ url('login') }}" class="psw">Se connecter</a> --}}
-                                <a class="offset-2" href="{{ url('login') }}" class="psw">Mot de Passe oublié?</a>
+                                <a  href="{{ url('login') }}" class="psw">Se connecter</a>
                             </div>
                         </div>
                         <!--End Register Form -->
